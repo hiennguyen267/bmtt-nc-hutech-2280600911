@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thực hành An toàn Thông tin Nâng cao</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        font-family: 'Poppins', sans-serif;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .navbar {
+        background-color: #2c3e50;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .navbar-brand img {
+        height: 40px;
+      }
+      .navbar-brand span {
+        color: #ecf0f1;
+        font-weight: 700;
+        margin-left: 10px;
+      }
+      .header-section {
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .header-section h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .cipher-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .cipher-card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        max-width: 250px;
+      }
+      .cipher-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      .cipher-card a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #34495e;
+        text-decoration: none;
+        border-radius: 15px;
+        background: linear-gradient(145deg, #e6e6e6, #ffffff);
+      }
+      .cipher-card a:hover {
+        background: linear-gradient(145deg, #d5d5d5, #ececec);
+        color: #2c3e50;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        margin-top: 40px;
+      }
+      @media (max-width: 768px) {
+        .header-section h1 {
+          font-size: 1.8rem;
+        }
+        .cipher-card {
+          max-width: 100%;
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/">
+        <img
+          src="https://th.bing.com/th/id/OIP.wE2SX8Fq6JLAaaf93l8vtQHaCY?w=321&h=112&c=7&r=0&o=5&pid=1.7"
+          alt="HUTECH Logo"
+        />
+        <span>HUTECH</span>
+      </a>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header-section">
+      <h1>Bài thực hành Bảo mật Thông tin Nâng cao</h1>
+      <h1>Nguyễn Thị Thuý Hiền -2280600911 HELLO WORLD</h1>
+    </div>
+
+    <!-- Cipher List -->
+    <div class="cipher-list">
+      <div class="cipher-card">
+        <a href="/caesar">Caesar Cipher</a>
+      </div>
+      <div class="cipher-card">
+        <a href="/vigenere">Vigenere Cipher</a>
+      </div>
+      <div class="cipher-card">
+        <a href="/railfence">Rail Fence Cipher</a>
+      </div>
+      <div class="cipher-card">
+        <a href="/playfair">Playfair Cipher</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; Nguyễn Thị Thuý Hiền -2280600911</p>
+    </div>
+  </body>
+</html>
