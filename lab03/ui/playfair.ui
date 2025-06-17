@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ui_MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>600</width><height>500</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Playfair Cipher</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_plaintext">
+    <property name="geometry">
+     <rect><x>30</x><y>30</y><width>100</width><height>30</height></rect>
+    </property>
+    <property name="text">
+     <string>Plaintext:</string>
+    </property>
+   </widget>
+
+   <widget class="QTextEdit" name="plaintext_txt">
+    <property name="geometry">
+     <rect><x>130</x><y>30</y><width>420</width><height>60</height></rect>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="label_key">
+    <property name="geometry">
+     <rect><x>30</x><y>110</y><width>100</width><height>30</height></rect>
+    </property>
+    <property name="text">
+     <string>Key:</string>
+    </property>
+   </widget>
+
+   <widget class="QLineEdit" name="key_txt">
+    <property name="geometry">
+     <rect><x>130</x><y>110</y><width>200</width><height>30</height></rect>
+    </property>
+   </widget>
+
+   <widget class="QPushButton" name="encrypt_btn">
+    <property name="geometry">
+     <rect><x>130</x><y>160</y><width>100</width><height>40</height></rect>
+    </property>
+    <property name="text">
+     <string>Encrypt</string>
+    </property>
+   </widget>
+
+   <widget class="QPushButton" name="decrypt_btn">
+    <property name="geometry">
+     <rect><x>240</x><y>160</y><width>100</width><height>40</height></rect>
+    </property>
+    <property name="text">
+     <string>Decrypt</string>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="label_ciphertext">
+    <property name="geometry">
+     <rect><x>30</x><y>230</y><width>100</width><height>30</height></rect>
+    </property>
+    <property name="text">
+     <string>Ciphertext:</string>
+    </property>
+   </widget>
+
+   <widget class="QTextEdit" name="ciphertext_txt">
+    <property name="geometry">
+     <rect><x>130</x><y>230</y><width>420</width><height>60</height></rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
